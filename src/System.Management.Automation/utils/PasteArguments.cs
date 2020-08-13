@@ -119,7 +119,7 @@ namespace System.Management.Automation.Internal
             for (int i = 0; i < s.Length; i++)
             {
                 char c = s[i];
-                if (NoLiteral.contains(c))
+                if (NoLiteral.Contains(c))
                 {
                     return false;
                 }

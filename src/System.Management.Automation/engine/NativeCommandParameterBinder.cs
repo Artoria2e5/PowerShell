@@ -211,11 +211,11 @@ namespace System.Management.Automation
                     }
                     else if (stringConstantType == StringConstantType.DoubleQuoted)
                     {
-                        PasteArguments.AppendArgument(_arguments, ResolvePath(arg, Context), true);                   
+                        PasteArguments.AppendArgument(_arguments, ResolvePath(arg, Context), true);
                     }
                     else
                     {
-                        PasteArguments.AppendArgument(_arguments, arg, false);   
+                        PasteArguments.AppendArgument(_arguments, arg, false);
                     }
                 }
             }

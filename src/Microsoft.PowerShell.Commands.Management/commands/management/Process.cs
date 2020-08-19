@@ -1882,7 +1882,7 @@ namespace Microsoft.PowerShell.Commands
 
             if (ArgumentList != null)
             {
-                if (EscapeArgs != false)
+                if (EscapeArgs ?? ExperimentalFeature.IsEnabled("PSEscapeForNativeExecutables"))
                 {
                     startInfo.Arguments = PasteArguments.Paste(ArgumentList, false);
                 }

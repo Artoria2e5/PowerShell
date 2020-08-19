@@ -123,6 +123,9 @@ namespace System.Management.Automation
                 new ExperimentalFeature(
                     name: "PSNativePSPathResolution",
                     description: "Convert PSPath to filesystem path, if possible, for native commands"),
+                new ExperimentalFeature(
+                    name: "PSEscapeForNativeExecutables",
+                    description: "Alternative approach for escaping when calling a native executable"),
             };
             EngineExperimentalFeatures = new ReadOnlyCollection<ExperimentalFeature>(engineFeatures);
 
